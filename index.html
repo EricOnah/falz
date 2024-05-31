@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Coming Soon 10</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!--===============================================================================================-->
+</head>
+
+<body>
+
+	<!--  -->
+	<div class="simpleslide100">
+		<div class="simpleslide100-item bg-img1" style="background-image: url('images/falz.jpg');"></div>
+	</div>
+
+
+
+	<!--  -->
+	<div class="flex-sb flex-row-rev where3-parent p-l-58 p-r-46 respon2">
+		<!--  -->
+		<div class="where3 wsize2 respon1">
+			<h3 class="l1-txt2 p-b-30 respon6 respon7">
+				"Before The Feast" - Falz
+			</h3>
+
+			<p class="m2-txt1 respon6">
+				Coming Soon!
+			</p>
+
+		</div>
+
+		<!--  -->
+		<div class="flex-w flex-col cd100 p-t-34 respon3">
+			<div class="flex-col wsize1 m-b-40 respon4">
+				<span class="l1-txt1 p-b-30 days">35</span>
+				<span class="s1-txt1">Days</span>
+			</div>
+
+			<div class="flex-col wsize1 m-b-40 respon4">
+				<span class="l1-txt1 p-b-30 hours">17</span>
+				<span class="s1-txt1">Hours</span>
+			</div>
+
+			<div class="flex-col wsize1 m-b-40 respon4">
+				<span class="l1-txt1 p-b-30 minutes">50</span>
+				<span class="s1-txt1">Minutes</span>
+			</div>
+
+			<div class="flex-col wsize1 m-b-40 respon4">
+				<span class="l1-txt1 p-b-30 seconds">39</span>
+				<span class="s1-txt1">Seconds</span>
+			</div>
+		</div>
+
+		<!--  -->
+
+	</div>
+
+
+	</div>
+
+
+
+
+
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/countdowntime/moment.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<script>
+
+
+		const day = document.querySelector(".days");
+		const hour = document.querySelector(".hours");
+		const min = document.querySelector(".minutes");
+		const sec = document.querySelector(".seconds");
+
+		const setDate = new Date("2024-6-7 00:00:00").getTime();
+		const countDown = setInterval(() => {
+			const today = new Date().getTime();
+			const diff = setDate - today;
+			const getDay = Math.floor(diff / (1000 * 60 * 60 * 24));
+			const getHour = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			const getMin = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+			const getSec = Math.floor((diff % (1000 * 60)) / 1000);
+
+			day.innerHTML = getDay;
+			hour.innerHTML = getHour;
+			min.innerHTML = getMin;
+			sec.innerHTML = getSec;
+
+			if (diff < 0) {
+				clearInterval(countDown);
+				timer.innerHTML = "countdown over";
+			}
+		}, 1000);
+
+
+
+	</script>
+
+
+	<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script>
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+	<!--===============================================================================================-->
+</body>
+
+</html>
