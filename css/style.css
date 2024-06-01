@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* Sets global font size to a percentage defined by user in their browser 1 rem = 10px */
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Thin;
+  src: url("../fonts/Poppins/Poppins-Thin.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Black;
+  src: url("../fonts/Poppins/Poppins-Black.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("../fonts/Poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: PlayfairDisplay-Italic;
+  src: url("../fonts/PlayfairDisplay/PlayfairDisplay-Italic.ttf");
+}
+
+@font-face {
+  font-family: PlayfairDisplay-BlackItalic;
+  src: url("../fonts/PlayfairDisplay/PlayfairDisplay-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: PlayfairDisplay-Bold;
+  src: url("../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf");
+}
+
+body {
+  font-family: PlayfairDisplay-BlackItalic;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 30px;
+  color: #777;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(5, 5, 5, 0.6),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(../images/falz.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
+}
+
+.container-main {
+  position: relative;
+}
+
+.container-txt {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  margin-left: 5rem;
+  width: 40rem;
+  margin-top: 40rem;
+  /* background-image: linear-gradient(
+    to right bottom,
+    rgba(5, 5, 5, 0.6),
+    rgba(15, 15, 15, 0.3)
+  ); */
+  border-radius: 3rem;
+  text-align: center;
+  /* border: 2px solid red; */
+}
+
+@media screen and (max-width: 75em) {
+  .container-txt {
+    /* border: 5px solid white; */
+    margin-top: 45rem;
+  }
+}
+
+@media screen and (max-width: 56.25em) {
+  .container-txt {
+    /* border: 5px solid red; */
+    margin-top: 50rem;
+  }
+  .container-wrapper {
+    margin-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .container-txt {
+    /* border: 5px solid white; */
+    margin-top: 60rem;
+    margin-left: 10rem;
+  }
+  .txt-main {
+    font-size: 2rem;
+  }
+  .container-wrapper {
+    margin-right: -3rem;
+    margin-bottom: 25rem;
+  }
+  .l1-txt1 {
+    line-height: 2.5 !important;
+    font-size: 4.2rem !important;
+  }
+}
+.txt-main {
+  color: #fff;
+  font-size: 3rem;
+  line-height: 1.5;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.txt-sub {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 1.3rem;
+}
+
+.container-count {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  /* border: 2px solid red; */
+  margin-top: 30rem;
+}
+
+.container-wrapper {
+  position: relative;
+  width: 9rem;
+  margin-left: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.l1-txt1 {
+  color: #fff;
+  font-size: 5.5rem;
+  display: block;
+  margin-bottom: 5px;
+  line-height: 2.5;
+  text-align: center;
+}
+
+.s1-txt1 {
+  display: block;
+  margin-top: -3.8rem;
+  color: rgb(214, 217, 219);
+  text-align: center;
+}
