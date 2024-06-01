@@ -209,7 +209,7 @@ body {
 @media screen and (max-width: 37.5em) {
   .container-txt {
     /* border: 5px solid white; */
-    margin-top: 60rem !important;
+    margin-top: 70rem !important;
     margin-left: 12rem;
     text-align: left;
   }
