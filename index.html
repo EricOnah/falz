@@ -23,6 +23,12 @@
 				Coming Soon!
 			</p>
 
+			<div class="links">
+				<a href=""><img src="./images/apple-music1.webp" alt="apple-music" class="apple"></a>
+				<a><img src="./images/Spotify-Icon-Logo.wine.svg" alt="spotify" class="spotify"></a>
+				<a><img src="./images/Youtube_Music_icon.svg.png" alt="youtube-music" class="youtube"></a>
+			</div>
+
 		</div>
 
 		<div class="container-count">
@@ -60,6 +66,12 @@
 		const hour = document.querySelector(".hours");
 		const min = document.querySelector(".minutes");
 		const sec = document.querySelector(".seconds");
+		const wrapper = document.querySelector(".container-wrapper");
+		const txtSub = document.querySelector(".txt-sub");
+		const txtMain = document.querySelector(".txt-main");
+		const apple = document.querySelector(".apple");
+		const spotify = document.querySelector(".spotify");
+		const youtube = document.querySelector(".youtube");
 
 		const setDate = new Date("2024-6-7 00:00:00").getTime();
 		const countDown = setInterval(() => {
@@ -77,9 +89,44 @@
 
 			if (diff < 0) {
 				clearInterval(countDown);
-				timer.innerHTML = "countdown over";
+				txtSub.innerHTML = "countdown over";
+				wrapper.classList.add('hidden')
 			}
 		}, 1000);
+
+		apple.addEventListener('click', function () {
+			if (txtSub.innerHTML == "countdown over") {
+				const search = `https://music.apple.com/us/search?term=${txtMain.innerHTML}`;
+				window.open(search);
+			}
+			else {
+				const search = `https://music.apple.com/us/search?term=falz`;
+				window.open(search);
+			}
+
+		})
+		spotify.addEventListener('click', function () {
+			if (txtSub.innerHTML == "countdown over") {
+				const search = `https://open.spotify.com/search/${txtMain.innerHTML}`;
+				window.open(search);
+			}
+			else {
+				const search = `https://open.spotify.com/search/falz`;
+				window.open(search);
+			}
+
+		})
+		youtube.addEventListener('click', function () {
+			if (txtSub.innerHTML == "countdown over") {
+				const search = `https://music.youtube.com/search?q=${txtMain.innerHTML}`;
+				window.open(search);
+			}
+			else {
+				const search = `https://music.youtube.com/search?q=falz`;
+				window.open(search);
+			}
+
+		})
 
 	</script>
 
