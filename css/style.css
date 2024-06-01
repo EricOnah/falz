@@ -216,6 +216,9 @@ body {
   .txt-main {
     font-size: 3rem !important;
   }
+  .txt-sub {
+    font-size: 2rem;
+  }
   .container-wrapper {
     margin-right: -3rem;
     margin-bottom: 25rem;
