@@ -130,7 +130,7 @@ body {
 @media screen and (max-width: 37.5em) {
   .container-txt {
     /* border: 5px solid white; */
-    margin-top: 60rem;
+    margin-top: 70rem;
     margin-left: 10rem;
   }
   .txt-main {
@@ -142,7 +142,7 @@ body {
   }
   .l1-txt1 {
     line-height: 2.5 !important;
-    font-size: 4.2rem !important;
+    font-size: 4.5rem !important;
   }
 }
 .txt-main {
