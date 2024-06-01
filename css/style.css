@@ -178,8 +178,7 @@ body {
 @media screen and (max-width: 75em) {
   .container-txt {
     /* border: 5px solid white; */
-    margin-top: 100rem;
-    border: 2px solid red;
+    margin-top: 45rem;
   }
   .links {
     display: inline-block;
@@ -193,8 +192,7 @@ body {
 @media screen and (max-width: 56.25em) {
   .container-txt {
     /* border: 5px solid red; */
-    margin-top: 100rem;
-    border: 5px solid white;
+    margin-top: 50rem;
   }
   .container-wrapper {
     margin-top: 10rem;
@@ -211,10 +209,9 @@ body {
 @media screen and (max-width: 37.5em) {
   .container-txt {
     /* border: 5px solid white; */
-    margin-top: 100rem !important;
+    margin-top: 80rem !important;
     margin-left: 12rem;
     text-align: left;
-    border: 10px solid green;
   }
   .txt-main {
     font-size: 3rem !important;
