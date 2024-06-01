@@ -179,6 +179,7 @@ body {
   .container-txt {
     /* border: 5px solid white; */
     margin-top: 100rem;
+    border: 2px solid red;
   }
   .links {
     display: inline-block;
@@ -193,6 +194,7 @@ body {
   .container-txt {
     /* border: 5px solid red; */
     margin-top: 100rem;
+    border: 5px solid white;
   }
   .container-wrapper {
     margin-top: 10rem;
@@ -212,6 +214,7 @@ body {
     margin-top: 100rem !important;
     margin-left: 12rem;
     text-align: left;
+    border: 10px solid green;
   }
   .txt-main {
     font-size: 3rem !important;
