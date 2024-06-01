@@ -130,11 +130,12 @@ body {
 @media screen and (max-width: 37.5em) {
   .container-txt {
     /* border: 5px solid white; */
-    margin-top: 70rem;
-    margin-left: 10rem;
+    margin-top: 70rem !important;
+    margin-left: 12rem;
+    text-align: left;
   }
   .txt-main {
-    font-size: 2rem;
+    font-size: 3rem !important;
   }
   .container-wrapper {
     margin-right: -3rem;
