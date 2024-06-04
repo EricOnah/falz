@@ -172,7 +172,7 @@ body {
 @media screen and (max-width: 93.75em) {
   .container-txt {
     /* border: 5px solid white; */
-    margin-top: 0 !important;
+    margin-top: 0;
     padding-top: 50rem;
     margin-left: 5px;
   }
