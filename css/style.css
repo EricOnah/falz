@@ -64,6 +64,11 @@ html {
   src: url("../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf");
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 body {
   font-family: PlayfairDisplay-BlackItalic;
   font-weight: 400;
@@ -80,12 +85,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-@media (max-width: 56.25em) {
-  body {
-    padding: 0;
-  }
 }
 
 .container-main {
@@ -175,9 +174,22 @@ body {
   margin-bottom: 3px;
 }
 
+@media screen and (max-width: 93.75rem) {
+  html {
+    height: 700px;
+  }
+
+  body {
+    height: 100%;
+  }
+  .container-txt {
+    border: 2px solid red;
+  }
+}
+
 @media screen and (max-width: 75em) {
   .container-txt {
-    /* border: 5px solid white; */
+    border: 5px solid white;
     margin-top: 45rem;
   }
   .links {
